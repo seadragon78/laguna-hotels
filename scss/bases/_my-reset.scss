@@ -1,0 +1,83 @@
+// Переменные
+// Variables
+:root {
+  --base-font-size: 16px;
+  --base-line-height: 200%;
+  --button-bg-color: #cc9933;
+  --font-family: 'Muller', sans-serif;
+  --font-size: 16px;
+  --background-color: #dfdfdf;
+  --buttons-font-color: #fff;
+  --text-base-color: #000000;
+  --container-width: 1170px;
+  --padding: 15px;
+  --navbar-toggler-color: #000;
+  --primary-color: #007bff; // Задайте ваш основной цвет здесь
+  --primary-color-dark: #0056b3; // Бол/ Задайте ваш основной цвет здесь
+  --hover-color: #CC9933; // Оранжевый цвет для наведения
+  --text-color: #333; // Ц
+}
+
+
+
+
+
+// Сброс стилей
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+// Основные стили
+body {
+  font-family: "Muller", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  background: url(../../img/primary-bg.jpg) no-repeat center center / cover;
+  padding: 0 15px;
+}
+
+
+// Общие классы
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+[class*='img'] {
+  display: flex;
+  max-width: 100%;
+}
+
+[class*='title'] {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+[class*='link'] {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@-moz-document url-prefix() {
+
+  .select-form,
+  .label-date {
+    transform: translateX(-4px);
+  }
+}

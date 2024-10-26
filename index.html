@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Отели</title>
+  <link rel="icon" href="img/icons/favicon.svg" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.css">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <header class="row header">
+
+    <header class="bg-light py-3">
+      <div class="container d-flex flex-lg-row flex-sm-column align-items-center">
+    
+
+        <!-- Навигация -->
+        <div class="d-flex align-items-center justify-content-between w-100 nav-container">
+          <div class="logo mb-2">
+            <a href="/"><img src="img/icons/main-logo.svg" alt="Логотип" class="img-fluid" style="max-height: 50px;"></a>
+          </div>
+          <!-- Телефон -->
+          <div class="phone text-center">
+            <a href="tel:+74953225448" class="text-dark phone-link">+7 495 322 54 48</a>
+          </div>
+
+          <!-- Личный кабинет -->
+          <div class="account d-flex align-items-center">
+            <a href="/login" class="text-dark account-link d-flex align-items-center">
+              <i class="fas fa-arrow-right" style="font-size: 15px;"></i>
+              <span class="ml-2">Личный кабинет</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+
+    <nav class="row navbar fixed-top navbar-expand-lg header-nav navbar-light bg-light" id="fixed-top">
+      <div class="container header-nav__container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Переключить навигацию">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse container header-nav__collapse justify-content-between" id="navbarNav">
+          <ul class="navbar-nav nav-main-nav justify-content-between">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about-us-sect">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service-sect">Услуги</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#advantage-sect">Преимущества</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#placement-sect">Размещение</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog-sect">Блог</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-sect">Контакты</a>
+            </li>
+            <li class="nav-item">
+              <div class="header-nav__button">
+                <button class="btn header-btn btn-cal0" tabindex="-1">Хочу тур</button>
+                <button class="btn header-btn btn-callback" tabindex="-1">Обратный звонок</button>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <div class="container mt-5">
+
+
+    <section class="row promo">
+      <h2 class="title promo__title">Спецпредложения</h2>
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col-12 mb-3">
+            <div class="card h-100 h-md-100 h-sm-100 card-promo-1">
+              <div class="card-body d-flex flex-column justify-content-end g-2">
+                <h5 class="card-title title-card-promo card--1">Мальдивские острова</h5>
+                <p class="card-text promo-price">от 55.000</p>
+                <a href="#" class="btn btn-primary promo-btn">Купить</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card h-100 h-md-100 h-sm-100 card-promo-2">
+              <div class="card-body d-flex flex-column justify-content-end g-2">
+                <h5 class="card-title title-card-promo card--2">Горящий тур на Крит</h5>
+                <p class="card-text promo-price-2">от 30.000</p>
+                <a href="#" class="btn btn-primary promo-btn">Купить</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card h-100 h-md-100 h-sm-100 card-promo-3">
+          <div class="card-body d-flex flex-column justify-content-end g-2">
+            <h5 class="card-title title-card-promo card--3">Номер класса люкс</h5>
+            <p class="card-text promo-price-3">от 5000</p>
+            <a href="#" class="btn btn-primary promo-btn">Купить</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="row about-us" id="about-us-section">
+      <h2 class="title promo__title">О нас</h2>
+      <p class="about-us__descr">
+        Идейные соображения высшего порядка, а также сложившаяся структура организации влечёт за собой процесс внедрения
+        и модернизации системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего
+        порядка, а также дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент
+        проверки системы обучения кадров, соответствует насущным потребностям. Равным образом сложившаяся структура
+        организации требуют определения и уточнения существенных финансовых и административных условий.
+      </p>
+    </section>
+
+
+    <section class="row services" id="service-section">
+      <h2 class="title services__title">Услуги</h2>
+      <div class="col-lg-6">
+        <ul class="list-reset">
+          <li class="services__item d-flex flex-column justify-content-end item-serv-first">
+            <div class="services__wrapper">
+              <a href="#" class="services__link">
+
+                <h3 class="services__title services-title-first">Эксклюзивное обслуживание</h3>
+                <svg width="10" height="18" viewbox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.778175 1.00002L8.55635 8.7782L0.778175 16.5564" stroke="#CC9933" stroke-width="2" />
+                </svg>
+            </div>
+            </a>
+            <p class="services__descr">
+              Равным образом постоянный количественный рост и сфера нашей активности
+            </p>
+          </li>
+
+          <li class="services__item d-flex flex-column justify-content-end item-serv-second">
+            <div class="services__wrapper">
+              <a href="#" class="services__link">
+                <h3 class="services__title services-title-second">Аренда банкетных залов</h3>
+                <svg width="10" height="18" viewbox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.778175 1.00002L8.55635 8.7782L0.778175 16.5564" stroke="#CC9933" stroke-width="2" />
+                </svg>
+            </div>
+            </a>
+            <p class="services__descr">
+              Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-6">
+        <ul class="list-reset">
+          <li class="services__item d-flex flex-column justify-content-end item-serv-third">
+            <div class="services__wrapper">
+              <a href="#" class="services__link">
+                <h3 class="services__title services-title-third">Сауны, бассейны, бани, фитнес-залы</h3>
+                <svg width="10" height="18" viewbox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.778175 1.00002L8.55635 8.7782L0.778175 16.5564" stroke="#CC9933" stroke-width="2" />
+                </svg>
+              </a>
+            </div>
+            <p class="services__descr">
+              Не следует, однако забывать, что начало повседневной работы по формированию позиции
+            </p>
+          </li>
+
+          <li class="services__item d-flex flex-column justify-content-end item-serv-forth">
+            <div class="services__wrapper">
+              <a href="#" class="services__link">
+                <h3 class="services__title services-title-forth">Охраняемые автомобильные стоянки</h3>
+                <svg width="10" height="18" viewbox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.778175 1.00002L8.55635 8.7782L0.778175 16.5564" stroke="#CC9933" stroke-width="2" />
+                </svg>
+              </a>
+            </div>
+            <p class="services__descr">
+              Равным образом постоянный количественный рост и сфера нашей активности
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    <section class="row advantages" id="advantage-sect">
+      <h2 class="title advantages__title col-12">Преимущества</h2>
+      <div class="row advantages__list justify-md-center list-reset col-lg-12">
+        <div class="col-lg-3 col-md-4 col-12 advantages__item">
+          <img src="img/icons/bathtub.svg" alt="Удобная ванна" class="advantages__img" />
+          <span class="advantages__text">
+            Удобство и комфорт, которые предоставляет наша продукция, позволяют вам наслаждаться каждым моментом.
+          </span>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-12 advantages__item">
+          <img src="img/icons/hanger.svg" alt="Функциональная вешалка" class="advantages__img" />
+          <span class="advantages__text">
+            Наши решения помогают организовать пространство, делая его более функциональным и эстетичным.
+          </span>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-12 advantages__item">
+          <img src="img/icons/heating.svg" alt="Эффективная система отопления" class="advantages__img" />
+          <span class="advantages__text">
+            Эффективные системы отопления обеспечивают комфортные условия в любое время года.
+          </span>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-12 advantages__item">
+          <img src="img/icons/hotel-key.svg" alt="Ключ от отеля" class="advantages__img" />
+          <span class="advantages__text">
+            Высокий уровень сервиса и индивидуальный подход к каждому клиенту делают нас лидерами в отрасли.
+          </span>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-12 advantages__item">
+          <img src="img/icons/parking.svg" alt="Удобная парковка" class="advantages__img" />
+          <span class="advantages__text">
+            Удобные парковочные решения обеспечивают безопасность и доступность для наших клиентов.
+          </span>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-12 advantages__item">
+          <img src="img/icons/reception.svg" alt="Рецепция" class="advantages__img" />
+          <span class="advantages__text">
+            Профессиональные консультации помогут вам выбрать оптимальные решения для вашего бизнеса.
+          </span>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-12 advantages__item">
+          <img src="img/icons/security-box.svg" alt="Безопасный сейф" class="advantages__img" />
+          <span class="advantages__text">
+            Мы гарантируем безопасность ваших данных и имущества с помощью современных технологий.
+          </span>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-12 advantages__item">
+          <img src="img/icons/swimming-pool.svg" alt="Бассейн" class="advantages__img" />
+          <span class="advantages__text">
+            Наши услуги по созданию и обслуживанию бассейнов обеспечивают вам удовольствие и расслабление.
+          </span>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="row placement justify-content-between" id="placement-sect">
+      <h3 class="title placement__title text-center col-12">Размещение</h3>
+      <div class="row col-lg-12 placement__list">
+        <!-- Карточки размещения -->
+        <div class="col-lg-4 col-md-6 col-12 placement-card">
+          <img src="img/placement/Lagoona_española.jpg" class="card-img-top placement__img" alt="Название товара">
+          <div class="card-body placement__cards d-flex flex-column">
+            <div class="placement__info">
+              <span class="placement__price">от <strong class="price-text">4 698</strong> / ночь</span>
+              <img src="img/icons/star.svg" alt="Рейтинг 4 из 5" class="placement__rating" />
+              <img src="img/icons/star.svg" alt="Рейтинг 4 из 5" class="placement__rating" />
+              <img src="img/icons/star.svg" alt="Рейтинг 4 из 5" class="placement__rating" />
+              <img src="img/icons/star.svg" alt="Рейтинг 4 из 5" class="placement__rating" />
+              <img src="img/icons/star-empty.svg" alt="Рейтинг 0 из 5" class="placement__rating" />
+            </div>
+            <h4 class="placement__name">Lagoona española</h4>
+            <span class="placement__geo">Барселона, Испания</span>
+            <a href="#" class="btn btn-primary placement__btn align-self-start">Номера</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 placement-card">
+          <img src="img/placement/Lagoona_son_típicas.jpg" class="card-img-top placement__img" alt="Название товара">
+          <div class="card-body placement__cards d-flex flex-column">
+            <div class="placement__info">
+              <span class="placement__price">от <strong class="price-text">5 148</strong> / ночь</span>
+              <img src="img/icons/star.svg" alt="Рейтинг 4 из 5" class="placement__rating" />
+              <img src="img/icons/star.svg" alt="Рейтинг 4 из 5" class="placement__rating" />
+              <img src="img/icons/star.svg" alt="Рейтинг 4 из 5" class="placement__rating" />
+              <img src="img/icons/star.svg" alt="Рейтинг 4 из 5" class="placement__rating" />
+              <img src="img/icons/star-empty.svg" alt="Рейтинг 0 из 5" class="placement__rating" />
+            </div>
+            <h4 class="placement__name">Lagoona son típicas</h4>
+            <span class="placement__geo">Барселона, Испания</span>
+            <a href="#" class="btn btn-primary placement__btn align-self-start">Номера</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 placement-card">
+          <img src="img/placement/Lagoona_de_la_guerra.jpg" class="card-img-top placement__img" alt="Название товара">
+          <div class="card-body placement__cards d-flex flex-column">
+            <div class="placement__info">
+              <span class="placement__price">от <strong class="price-text">6 254</strong> / ночь</span>
+              <img src="img/icons/star.svg" alt="Рейтинг 5 из 5" class="placement__rating" />
+              <img src="img/icons/star.svg" alt="Рейтинг 5 из 5" class="placement__rating" />
+              <img src="img/icons/star.svg" alt="Рейтинг 5 из 5" class="placement__rating" />
+              <img src="img/icons/star.svg" alt="Рейтинг 5 из 5" class="placement__rating" />
+              <img src="img/icons/star.svg" alt="Рейтинг 5 из 5" class="placement__rating" />
+            </div>
+            <h4 class="placement__name">Lagoona de la guerra</h4>
+            <span class="placement__geo">Барселона, Испания</span>
+            <a href="#" class="btn btn-primary placement__btn align-self-start">Номера</a>
+          </div>
+        </div>
+
+        <!-- Далее карточки размещения... -->
+        <!-- Используйте аналогичную структуру для остальных карточек -->
+
+        <div class="col-lg-4 col-md-6 col-12 placement-card">
+          <img src="img/placement/Lagoona_mentira_piadosa.jpg" class="card-img-top placement__img"
+            alt="Название товара">
+          <div class="card-body placement__cards d-flex flex-column">
+            <div class="placement__info">
+              <span class="placement__price">от <strong class="price-text">6 320</strong> / ночь</span>
+              <img src="img/icons/star.svg" alt="Рейтинг 5 из 5" class="placement__rating" />
+              <img src="img/icons/star.svg" alt="Рейтинг 5 из 5" class="placement__rating" />
+              <img src="img/icons/star.svg" alt="Рейтинг 5 из 5" class="placement__rating" />
+              <img src="img/icons/star.svg" alt="Рейтинг 5 из 5" class="placement__rating" />
+              <img src="img/icons/star.svg" alt="Рейтинг 5 из 5" class="placement__rating" />
+            </div>
+            <h4 class="placement__name">Lagoona mentira piadosa</h4>
+            <span class="placement__geo">Барселона, Испания</span>
+            <a href="#" class="btn btn-primary placement__btn align-self-start">Номера</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 placement-card">
+          <img src="img/placement/Lagoona_empujar_la_creatividad.jpg" class="card-img-top placement__img"
+            alt="Название товара">
+          <div class="card-body placement__cards d-flex flex-column">
+            <div class="placement__info">
+              <span class="placement__price">от <strong class="price-text">6 457</strong> / ночь</span>
+              <img src="img/icons/star.svg" alt="Рейтинг 4 из 5" class="placement__rating" />
+              <img src="img/icons/star.svg" alt="Рейтинг 4 из 5" class="placement__rating" />
+              <img src="img/icons/star.svg" alt="Рейтинг 4 из 5" class="placement__rating" />
+              <img src="img/icons/star.svg" alt="Рейтинг 4 из 5" class="placement__rating" />
+              <img src="img/icons/star-empty.svg" alt="Рейтинг 0 из 5" class="placement__rating" />
+            </div>
+            <h4 class="placement__name">Lagoona empujar la creatividad</h4>
+            <span class="placement__geo">Барселона, Испания</span>
+            <a href="#" class="btn btn-primary placement__btn align-self-start">Номера</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 placement-card">
+          <img src="img/placement/Lagoona_el_retorno.jpg" class="card-img-top placement__img" alt="Название товара">
+          <div class="card-body placement__cards d-flex flex-column">
+            <div class="placement__info">
+              <span class="placement__price">от <strong class="price-text">6 320</strong> / ночь</span>
+              <img src="img/icons/star.svg" alt="Рейтинг 4 из 5" class="placement__rating" />
+              <img src="img/icons/star.svg" alt="Рейтинг 4 из 5" class="placement__rating" />
+              <img src="img/icons/star.svg" alt="Рейтинг 4 из 5" class="placement__rating" />
+              <img src="img/icons/star.svg" alt="Рейтинг 4 из 5" class="placement__rating" />
+              <img src="img/icons/star-empty.svg" alt="Рейтинг 0 из 5" class="placement__rating" />
+            </div>
+            <h4 class="placement__name">Lagoona el retorno</h4>
+            <span class="placement__geo">Барселона, Испания</span>
+            <a href="#" class="btn btn-primary placement__btn align-self-start">Номера</a>
+          </div>
+        </div>
+
+        <!-- Третий ряд -->
+        <div class="col-lg-4 col-md-6 col-12 placement-card">
+          <img src="img/placement/Lagoona_mentira_piadosa-2.jpg" class="card-img-top placement__img"
+            alt="Название товара">
+          <div class="card-body placement__cards d-flex flex-column">
+            <div class="placement__info">
+              <span class="placement__price">от <strong class="price-text">6 505</strong> / ночь</span>
+              <img src="img/icons/star.svg" alt="Рейтинг 5 из 5" class="placement__rating" />
+              <img src="img/icons/star.svg" alt="Рейтинг 5 из 5" class="placement__rating" />
+              <img src="img/icons/star.svg" alt="Рейтинг 5 из 5" class="placement__rating" />
+              <img src="img/icons/star.svg" alt="Рейтинг 5 из 5" class="placement__rating" />
+              <img src="img/icons/star.svg" alt="Рейтинг 5 из 5" class="placement__rating" />
+            </div>
+            <h4 class="placement__name">Lagoona mentira piadosa</h4>
+            <span class="placement__geo">Барселона, Испания</span>
+            <a href="#" class="btn btn-primary placement__btn align-self-start">Номера</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 placement-card">
+          <img src="img/placement/Lagoona_suerte_siguió_siempre.jpg" class="card-img-top placement__img"
+            alt="Название товара">
+          <div class="card-body placement__cards d-flex flex-column">
+            <div class="placement__info">
+              <span class="placement__price">от <strong class="price-text">6 824</strong> / ночь</span>
+              <img src="img/icons/star.svg" alt="Рейтинг 4 из 5" class="placement__rating" />
+              <img src="img/icons/star.svg" alt="Рейтинг 4 из 5" class="placement__rating" />
+              <img src="img/icons/star.svg" alt="Рейтинг 4 из 5" class="placement__rating" />
+              <img src="img/icons/star.svg" alt="Рейтинг 4 из 5" class="placement__rating" />
+              <img src="img/icons/star-empty.svg" alt="Рейтинг 0 из 5" class="placement__rating" />
+            </div>
+            <h4 class="placement__name">Lagoona suerte siguió siempre</h4>
+            <span class="placement__geo">Барселона, Испания</span>
+            <a href="#" class="btn btn-primary placement__btn align-self-start">Номера</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 placement-card all-variables">
+          <div class="card-body placement__cards body-final d-flex flex-column justify-content-end">
+            <a href="#" class="placement__link flex">
+              <span class="link__title title-place">Посмотреть все варианты</span>
+              <!-- <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.778175 1.22183L8.55635 9L0.778175 16.7782" stroke="white" stroke-width="2" />
+              </svg> -->
+            </a>
+            <a href="#" class="btn btn-primary placement__btn-final align-self-start">Номера</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="row want-tour" id="want-tour-section">
+      <h2 class="title want-tour__title mt-4 mb-4 pl-4">Хочу тур</h2>
+
+      <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="tour-fields">
+        <div class="row g-3 justify-content-center d-flex align-items-center">
+          <div class="col-lg-2 col-md-4 col-12">
+            <label for="city-select" class="form-label">Города</label>
+            <select id="city-select" name="country" class="form-select" required>
+              <option value="" disabled selected>Выберите город</option>
+              <option value="Санкт-Петербург">Санкт-Петербург</option>
+            </select>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-12">
+            <label for="country-select" class="form-label">Страна</label>
+            <select id="country-select" name="form-select" class="form-select" required>
+              <option value="" disabled selected>Выберите страну</option>
+              <option value="Австралия">Австралия</option>
+            </select>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-12">
+            <label for="arrival-date" class="form-label">Дата прибытия</label>
+            <input id="arrival-date" class="form-control" type="date" required />
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-12">
+            <label for="nights" class="form-label">Ночей</label>
+            <input id="nights" class="form-control" type="number" min="0" max="6" required />
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-12">
+            <label for="tourists" class="form-label">Туристы</label>
+            <input id="tourists" class="form-control" type="number" min="0" max="2" required />
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-12 text-center">
+            <button type="submit" class="btn btn-primary form-btn">Найти</button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+
+    <section class="row contact" id="contact-section">
+      <h3 class="title section__title mt-4 mb-4">Контакты</h3>
+
+      <div class="d-flex flex-column flex-lg-row contact__container">
+        <div class="contact-sect__item contact-sect__left col-12 col-lg-6 d-flex">
+          <address class="contact-sect__address flex-grow-1">
+            <ul class="contact-sect__list list-contact list-reset">
+              <li class="list-contact__item d-flex">
+                <strong class="address-left col-6 text-start">Адрес:</strong>
+                <span class="address-right col-6 text-start">Москва, улица Юности, дом 5 строение 4, офис 2</span>
+              </li>
+
+              <li class="list-contact__item d-flex">
+                <strong class="address-left col-6 text-start">Телефоны:</strong>
+                <span class="address-right col-6 text-start">
+                  <ul class="list-reset">
+                    <li class="item-link">
+                      <a href="tel:+74995356434" class="contact-item-link">+7 (499) 535-64-34</a>
+                    </li>
+                    <li class="item-link">
+                      <a href="tel:+74950050544" class="contact-item-link">+7 (495) 005-05-44</a>
+                    </li>
+                  </ul>
+                </span>
+              </li>
+
+              <li class="list-contact__item d-flex">
+                <strong class="address-left col-6 text-start">Email:</strong>
+                <span class="address-right col-6 text-start">
+                  <ul class="list-reset">
+                    <li class="item-box">
+                      <a href="mailto:lg.oona@mail.ru" class="contact-item-link">lg.oona@mail.ru</a>
+                      <span class="contact-text">по вопросам бронирования</span>
+                    </li>
+                    <li class="item-box">
+                      <a href="mailto:hotels.ln@mail.ru" class="contact-item-link">hotels.ln@mail.ru</a>
+                      <span class="contact-text">по вопросам сотрудничества</span>
+                    </li>
+                  </ul>
+                </span>
+              </li>
+
+              <li class="list-contact__item d-flex">
+                <strong class="address-left col-6 text-start">График:</strong>
+                <span class="address-right col-6 text-start">Понедельник-пятница, с 10:00 до 19:00</span>
+              </li>
+            </ul>
+
+            <button class="btn contact-sect__btn" aria-label="Построить маршрут">Построить маршрут</button>
+          </address>
+        </div>
+
+        <div class="contact-sect__item contact-sect__right col-12 col-lg-6">
+          <!-- Здесь можно добавить дополнительную информацию или элементы -->
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="row container footer text-center">
+      <div class="footer__content d-flex flex-column justify-content-center align-items-center">
+        <ul class="footer__menu menu-footer list-unstyled mb-3">
+          <li class="menu-footer__item">
+            © 2024 Управляющая компания Объединённой сети «Лагуна Хотелс»
+          </li>
+          <li class="menu-footer__item">
+            Представленная на сайте информация носит справочный характер и не является публичной офертой
+          </li>
+          <li class="menu-footer__item">
+            <a href="#" class="menu-footer__link">Пользовательское соглашение</a>
+          </li>
+        </ul>
+
+        <ul class="social-menu list-unstyled d-flex justify-content-center mb-0">
+          <li class="social-menu__item me-3">
+            <a href="#" class="social-menu__link" aria-label="Социальная сеть 1">
+              <svg class="icon-wrap" width="25" height="25" viewBox="0 0 25 25" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <!-- Ваш SVG код для иконки -->
+              </svg>
+            </a>
+          </li>
+          <li class="social-menu__item me-3">
+            <a href="#" class="social-menu__link" aria-label="Социальная сеть 2">
+              <svg class="icon-wrap" width="25" height="25" viewBox="0 0 25 25" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <!-- Ваш SVG код для иконки -->
+              </svg>
+            </a>
+          </li>
+          <li class="social-menu__item">
+            <a href="#" class="social-menu__link" aria-label="Социальная сеть 3">
+              <svg class="icon-wrap" width="25" height="25" viewBox="0 0 25 25" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <!-- Ваш SVG код для иконки -->
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+
+
+
+
+
+
+
+
+  <footer class="row footer">
+
+  </footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
